@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Challenge</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-</body>
-<script src="src/index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Code Challenge</title>
+  </head>
+  <body>
+    <h1>Code Challenge</h1>
+    <form>
+      <div id="product1" class="product">
+        <div>
+          <label for="amount">Amount: </label>
+          <input type="number" name="amount" id="amount" required />
+        </div>
+        <div>
+          <label for="product-name">Product: </label>
+          <input type="text" name="product-name" id="product-name" required />
+        </div>
+        <div>
+          <label for="price">Price: </label>
+          <input type="number" name="price" id="price" required />
+        </div>
+        <div>
+          <label for="category">Category: </label>
+          <select name="category" id="category">
+            <option value="basic">Basic</option>
+            <option value="books">Books</option>
+            <option value="food">Food</option>
+            <option value="medical">Medical</option>
+          </select>
+        </div>
+        <div>
+          <label for="import-duty">Is Import Duty?: </label>
+          <input type="checkbox" name="import-duty" id="import-duty" required />
+        </div>
+      </div>
+      <div id="product2" class="product">
+        <div>
+          <label for="amount">Amount: </label>
+          <input type="number" name="amount" id="amount" required />
+        </div>
+        <div>
+          <label for="product-name">Product: </label>
+          <input type="text" name="product-name" id="product-name" required />
+        </div>
+        <div>
+          <label for="price">Price: </label>
+          <input type="number" name="price" id="price" required />
+        </div>
+        <div>
+          <label for="category">Category: </label>
+          <select name="category" id="category">
+            <option value="basic">Basic</option>
+            <option value="books">Books</option>
+            <option value="food">Food</option>
+            <option value="medical">Medical</option>
+          </select>
+        </div>
+        <div>
+          <label for="import-duty">Is Import Duty?: </label>
+          <input type="checkbox" name="import-duty" id="import-duty" required />
+        </div>
+      </div>
+      <div id="product3" class="product">
+        <div>
+          <label for="amount">Amount: </label>
+          <input type="number" name="amount" id="amount" required />
+        </div>
+        <div>
+          <label for="product-name">Product: </label>
+          <input type="text" name="product-name" id="product-name" required />
+        </div>
+        <div>
+          <label for="price">Price: </label>
+          <input type="number" name="price" id="price" required />
+        </div>
+        <div>
+          <label for="category">Category: </label>
+          <select name="category" id="category">
+            <option value="basic">Basic</option>
+            <option value="books">Books</option>
+            <option value="food">Food</option>
+            <option value="medical">Medical</option>
+          </select>
+        </div>
+        <div>
+          <label for="import-duty">Is Import Duty?: </label>
+          <input type="checkbox" name="import-duty" id="import-duty" required />
+        </div>
+        <div>
+          <input type="submit" value="Get Receipt" onclick="getReceipt()" />
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="src/index.js"></script>
 </html>
